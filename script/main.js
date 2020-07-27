@@ -317,7 +317,11 @@ $('document').ready(function () {
       .delay(5000)
       .promise()
       .then(() => resolveFetch())
-      .then(() => animationTimeline());
+      .then(() => {
+        var audio = $('.song')[0];
+        audio.play();
+        animationTimeline();
+      });
 
     setTimeout(() => {
       $('#bulb_yellow').addClass('bulb-glow-yellow-after');
