@@ -265,6 +265,14 @@ const animationTimeline = () => {
     .to('.msg-4', 0.7, ideaTextTransLeave, '+=1.5')
     .from('.msg-5', 0.7, ideaTextTrans)
     .to('.msg-5', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-6', 0.7, ideaTextTrans)
+    .to('.msg-6', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-7', 0.7, ideaTextTrans)
+    .to('.msg-7', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-8', 0.7, ideaTextTrans)
+    .to('.msg-8', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-9', 0.7, ideaTextTrans)
+    .to('.msg-9', 0.7, ideaTextTransLeave, '+=1.5')
     .staggerFrom('.nine p', 1, ideaTextTrans, 1.2)
     .to(
       '.last-smile',
