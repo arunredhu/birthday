@@ -304,7 +304,10 @@ const resolveFetch = () => {
 
 $('document').ready(function () {
   const $btn = $('#turn-on-btn');
+
   $btn.click(function () {
+    var audio = $('.song')[0];
+    audio.play();
     $('#bulb_yellow').addClass('bulb-glow-yellow');
     $('#bulb_red').addClass('bulb-glow-red');
     $('#bulb_blue').addClass('bulb-glow-blue');
@@ -318,8 +321,6 @@ $('document').ready(function () {
       .promise()
       .then(() => resolveFetch())
       .then(() => {
-        var audio = $('.song')[0];
-        audio.play();
         animationTimeline();
       });
 
