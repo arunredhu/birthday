@@ -136,14 +136,14 @@ body {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 20rem;
   height: auto;
 }
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -35px;
+  width: 4rem;
+  top: -25px;
   left: 41.5%;
   /* transform: scale(0.1); */
 }
@@ -172,6 +172,10 @@ body {
   left: 0;
   visibility: hidden;
   z-index: -1;
+}
+
+.summi-dp {
+  max-width: 20rem;
 }
 
 .eight svg:nth-child(1) {
@@ -245,6 +249,13 @@ body {
   font-weight: lighter;
 }
 
+.ten p {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 #replay {
   z-index: 3;
   cursor: pointer;
@@ -287,25 +298,25 @@ body {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    left: 49%;
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 37%;
+    left: 51%;
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
-    left: 32%;
+    left: 49%;
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    left: 52%;
   }
 }
 
@@ -332,8 +343,8 @@ body {
   }
 
   .six .hat {
-    width: 50px;
-    top: -20px;
+    width: 4rem;
+    top: -25px;
   }
 
   .wish-hbd {

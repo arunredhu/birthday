@@ -182,7 +182,7 @@ const animationTimeline = () => {
       0.2
     )
     .from(
-      '.lydia-dp',
+      '.summi-dp',
       0.5,
       {
         scale: 3.5,
@@ -255,6 +255,16 @@ const animationTimeline = () => {
       y: 30,
       zIndex: '-1',
     })
+    .from('.msg-1', 0.7, ideaTextTrans)
+    .to('.msg-1', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-2', 0.7, ideaTextTrans)
+    .to('.msg-2', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-3', 0.7, ideaTextTrans)
+    .to('.msg-3', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-4', 0.7, ideaTextTrans)
+    .to('.msg-4', 0.7, ideaTextTransLeave, '+=1.5')
+    .from('.msg-5', 0.7, ideaTextTrans)
+    .to('.msg-5', 0.7, ideaTextTransLeave, '+=1.5')
     .staggerFrom('.nine p', 1, ideaTextTrans, 1.2)
     .to(
       '.last-smile',
