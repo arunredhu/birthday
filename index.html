@@ -14,6 +14,19 @@
   </head>
 
   <body>
+    <audio class="song" controls loop autoplay>
+      <source src="audio/hbd.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="blubs">
+      <div class="blub" id="bulb_yellow"></div>
+      <div class="blub" id="bulb_red"></div>
+      <div class="blub" id="bulb_blue"></div>
+      <div class="blub" id="bulb_green"></div>
+      <div class="blub" id="bulb_pink"></div>
+      <div class="blub" id="bulb_orange"></div>
+    </div>
+
     <div class="container">
       <div class="one">
         <h1 class="one">
@@ -129,9 +142,47 @@
         <p class="last-smile">:)</p>
       </div>
     </div>
+    <div class="turn-on-btn" id="turn-on-btn">
+      Turn on lights
+    </div>
   </body>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script type="text/babel" src="script/main.js"></script>
+  <script>
+    // $('#bulb_yellow').addClass('bulb-glow-yellow');
+    // $('#bulb_red').addClass('bulb-glow-red');
+    // $('#bulb_blue').addClass('bulb-glow-blue');
+    // $('#bulb_green').addClass('bulb-glow-green');
+    // $('#bulb_pink').addClass('bulb-glow-pink');
+    // $('#bulb_orange').addClass('bulb-glow-orange');
+
+    // setTimeout(() => {
+    //   $('#bulb_yellow').addClass('bulb-glow-yellow-after');
+    //   $('#bulb_red').addClass('bulb-glow-red-after');
+    //   $('#bulb_blue').addClass('bulb-glow-blue-after');
+    //   $('#bulb_green').addClass('bulb-glow-green-after');
+    //   $('#bulb_pink').addClass('bulb-glow-pink-after');
+    //   $('#bulb_orange').addClass('bulb-glow-orange-after');
+    // }, 5000);
+
+    // var audio = $('.song')[0];
+    //     audio.play();
+    // $('#play').click(function(){
+    // 	var audio = $('.song')[0];
+    //       audio.play();
+    //       $('#bulb_yellow').addClass('bulb-glow-yellow-after');
+    // 	$('#bulb_red').addClass('bulb-glow-red-after');
+    // 	$('#bulb_blue').addClass('bulb-glow-blue-after');
+    // 	$('#bulb_green').addClass('bulb-glow-green-after');
+    // 	$('#bulb_pink').addClass('bulb-glow-pink-after');
+    // 	$('#bulb_orange').addClass('bulb-glow-orange-after');
+    // 	$('body').css('backgroud-color','#FFF');
+    // 	$('body').addClass('peach-after');
+    // 	$(this).fadeOut('slow').delay(6000).promise().done(function(){
+    // 		$('#bannar_coming').fadeIn('slow');
+    // 	});
+    // });
+  </script>
 </html>
